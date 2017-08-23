@@ -1,6 +1,6 @@
 FROM node:alpine
 
-COPY . /app
+VOLUME . /app
 WORKDIR /app
 
 RUN npm install -g yarn
