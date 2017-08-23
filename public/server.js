@@ -22,7 +22,7 @@ app.get('/admin/*', function(req, res) {
 })
 
 /* PAPER */
-app.use('/paper', express.static('files'))
+app.use('/papers', express.static('files'))
 
 app.use(morgan('common'))
 

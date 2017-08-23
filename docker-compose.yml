@@ -12,6 +12,7 @@ services:
     build: ./node
     volumes:
       - ./node:/app
+      - ./public:/public
     links:
       - mongo
     ports:
