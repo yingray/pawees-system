@@ -1,0 +1,12 @@
+image: docker:git
+
+stages:
+  - test
+
+# unit test
+test:
+  script:
+    - npm test
+  stage: test
+  only:
+    - branches
