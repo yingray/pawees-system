@@ -1,11 +1,9 @@
 FROM node:alpine
 
-VOLUME . /app
 WORKDIR /app
 
-RUN npm install -g yarn
-RUN yarn
+COPY . .
+RUN npm install
 
 EXPOSE 8081
-
-CMD ["npm", "start"]
+CMD [ "npm", "start" ]
