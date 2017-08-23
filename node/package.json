@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "dev": "ENV=dev nodemon index.js",
     "test": "mocha"
   },
   "dependencies": {

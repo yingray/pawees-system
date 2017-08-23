@@ -6,7 +6,8 @@ module.exports = function(cb) {
   // Initialize the component here then call the callback
   // More logic
   mongoose.Promise = global.Promise
-  const db = mongoose.connect('mongodb://localhost:27017/pawees', {
+  const host = process.env.ENV === 'dev' ? 'mongodb://localhost:27017' : 'mongodb://mongo'
+  const db = mongoose.connect(`${host}/pawees`, {
     useMongoClient: true,
     /* other options */
   });

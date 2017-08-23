@@ -18,6 +18,8 @@ module.exports = cb => {
   app = express()
   const mongoStore = connectMongo(session)
 
+  const host = process.env.ENV === 'dev' ? 'mongodb://localhost:27017' : 'mongodb://mongo'
+
   // app.use(morgan('common'))
   app.use(morgan('dev'))
 
@@ -30,7 +32,7 @@ module.exports = cb => {
       secret: config.get('SESSION_SECRET'),
       saveUninitialized: false, // don't create session until something stored
       resave: false, //don't save session if unmodified
-      store: new mongoStore({ url: 'mongodb://localhost:27017/pawees' })
+      store: new mongoStore({ url: `${host}/pawees` })
     })
   )
 

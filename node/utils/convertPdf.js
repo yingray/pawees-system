@@ -69,7 +69,7 @@ module.exports = (filename, content) =>
       phantomPath: './node_modules/phantomjs/bin/phantomjs'
     }
 
-    pdf.create(html, options).toFile(`./files/papers/${filename}.pdf`, function(err, res) {
+    pdf.create(html, options).toFile(`../public/files/${filename}.pdf`, function(err, res) {
       if (err) {
         reject(err)
       } else {
