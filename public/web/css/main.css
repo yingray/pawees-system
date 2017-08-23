@@ -178,7 +178,7 @@ nav ul li a{
 	background: rgba(0,0,0,0.8);
 	z-index: 20;
 
-	transition: opacity 1s; 
+	transition: opacity 1s;
 }
 	.fixed_shadow2{
 		left:0;
@@ -195,8 +195,8 @@ nav ul li a{
 
 	width: 50%;
 	height: 350px;
-	
-	background: url(../images/section01/video_BG10.jpg) center top;
+
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG10.jpg) center top;
 	background-size: cover;
 
 	border-radius: 30px;
@@ -212,7 +212,7 @@ nav ul li a{
 	top: 0;
 	bottom: 0;
 
-	width: 60%;	
+	width: 60%;
 	background-repeat: no-repeat;
 	background-size:100% 100%;
 	background-position: 0 0;
@@ -282,7 +282,7 @@ nav ul li a{
 	top:250px;
 	width: 100px;
 	height: 32px;
-	margin:0 30px; 	
+	margin:0 30px;
 
 	font-size: 20px;
 	font-family: 'Cuprum', sans-serif;
@@ -290,12 +290,12 @@ nav ul li a{
 
 	line-height: 32px;
 	letter-spacing: 2px;
-	font-weight: bolder;	
+	font-weight: bolder;
 	text-align: center;
 
 	cursor: pointer;
 	border-radius: 20px;
-	transition:0.2s; 
+	transition:0.2s;
 	box-shadow: rgba(0,0,0,0.8) 0px 0px 25px 0px;
 	background-color: rgba(255,255,255,0.5);
 }
@@ -420,7 +420,7 @@ nav ul li a{
 /*登入*/
 
 form.account{
-	background: url(../images/section01/video_BG9.jpg) no-repeat center;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG9.jpg) no-repeat center;
 	background-size: cover;
 }
 .Registration_Page form.account fieldset{
@@ -644,7 +644,7 @@ form.account .or{
 		}
 		.Registration_Page form.account .next_step:hover{
 			box-shadow: #fff 0px 0px 5px 0px;
-		}		
+		}
 
 
 	.Registration_Page form .edit_information{
@@ -807,18 +807,18 @@ form.account .or{
 	color:#fff;
 	background-color: #555;
 
-	padding: 5px 8px; 
+	padding: 5px 8px;
 
 	font-size: 16px;
 	line-height: 28px;
 }
 	.Registration_Page a.web.pdf{
-		padding: 5px 10px; 
+		padding: 5px 10px;
 	}
 	.Registration_Page a.web.maptag{
 		position: absolute;
 		top:0;
-		right: 0; 
+		right: 0;
 	}
 
 
@@ -1169,7 +1169,7 @@ nav ul li a{
 }
 
 .wait_BG .button{
-	margin:0 10px; 
+	margin:0 10px;
 	box-shadow: rgba(255,255,255,0.5) 0px 0px 25px 0px;
 }
 

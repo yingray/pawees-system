@@ -7,7 +7,7 @@
 	/*background-color:  ---重點色*/
 	/*background-color:  ---輔助色*/
 
-	
+
 
 	/*margin: auto;
 	left: 0;
@@ -44,7 +44,7 @@ section video{
 /*---section01---*/
 .section01{
 	height: 68%;
-	background: url(../images/section01/video_BG.jpg) no-repeat fixed center;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG.jpg) no-repeat fixed center;
 	background-size: cover;
 }
 
@@ -59,7 +59,7 @@ section video{
 
 	width: 600px;
 	height: 150px;
-	
+
 	background-repeat: no-repeat;
 	background-size:100% 100%;
 	background-position: 0 0;
@@ -101,7 +101,7 @@ section video{
 
 /*---section02---*/
 /*置底於歡迎頁*/
-.section02{ 
+.section02{
 	z-index: 1;
 	position: absolute;
 	bottom: 0;
@@ -139,7 +139,7 @@ section video{
 /*---section03---*/
 
 .section03{
-	background: url(../images/section01/video_BG8.jpg) no-repeat fixed center;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG8.jpg) no-repeat fixed center;
 	background-size: cover;
 
 	height: auto;
@@ -149,7 +149,7 @@ section video{
 	padding: 100px 0px 225px;
 	margin: auto;
 	left: 0;
-	right: 0; 
+	right: 0;
 
 	width: 100%;
 
@@ -239,7 +239,7 @@ section video{
 	right: 0;
 
 	width: 70%;
-	padding: 50px 0 150px; 
+	padding: 50px 0 150px;
 
 	color: #333;
 	font-size: 20px;
@@ -259,7 +259,7 @@ section video{
 		background-color: #333;
 
 		color: rgba(252, 227, 146, 1.00);
-		padding:5px 10px; 
+		padding:5px 10px;
 
 		line-height: 70px;
 		font-size: 22px;
@@ -284,7 +284,7 @@ section video{
 	right: 0;
 
 	width: 70%;
-	padding: 50px 0; 
+	padding: 50px 0;
 
 	color: #333;
 	font-size: 18px;
@@ -305,7 +305,7 @@ section video{
 		background-color: #333;
 
 		color: #fff;
-		padding:5px 10px; 
+		padding:5px 10px;
 
 		line-height: 80px;
 		font-size: 20px;
@@ -317,10 +317,10 @@ section video{
 
 .section06{
 	height: auto;
-	background: url(../images/section01/video_BG5.jpg) no-repeat fixed center;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG5.jpg) no-repeat fixed center;
 	background-size: cover;
 
-	padding: 50px 0 100px; 
+	padding: 50px 0 100px;
 }
 
 .section06 .important_date{
@@ -354,7 +354,7 @@ section video{
 	}
 
 .section06 .important_date table tr td{
-	padding:0 25px; 
+	padding:0 25px;
 	text-align: right;
 	width: 50%;
 }
@@ -363,7 +363,7 @@ section video{
 		font-size: 20px;
 		border: 1px solid #fff;
 
-		padding: 5px 10px; 
+		padding: 5px 10px;
 	}
 	.section06 .important_date table tr td~td{
 		text-align: left;
@@ -401,7 +401,7 @@ section video{
 	font-size: 18px;
 
 	font-family: 'Cuprum', sans-serif,微軟正黑體;
-	
+
 }
 	.section07 .fee table:before{
 		content: "";
@@ -417,7 +417,7 @@ section video{
 	}
 
 .section07 .fee table tr td{
-	padding:0 25px; 
+	padding:0 25px;
 	width: 50%;
 
 	text-align: justify;
@@ -434,18 +434,18 @@ section video{
 		background: #333;
 		color: rgba(98, 153, 159, 1.00);
 
-		padding: 5px 10px; 
+		padding: 5px 10px;
 		font-family: 'Marcellus SC', serif;
 		line-height: 70px;
 	}
-	
+
 
 
 /*---section08---*/
 
 .section08{
 	height: auto;
-	background: url(../images/section01/video_BG2.jpg) no-repeat fixed center;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG2.jpg) no-repeat fixed center;
 	background-size: cover;
 
 	padding: 200px 0;
@@ -462,7 +462,7 @@ section video{
 	background-color: rgba(255,255,255,0.5);
 	text-align: center;
 
-	padding: 0 50px 50px; 
+	padding: 0 50px 50px;
 }
 
 .section08 .news h1{
@@ -496,7 +496,7 @@ section video{
 	color:#555;
 	background-color: #ccc;
 
-	padding:5px 6px; 
+	padding:5px 6px;
 }
 
 .section08 .news table tr td:nth-child(2){
@@ -511,7 +511,7 @@ section video{
 	background-color: #555;
 
 	margin: 6px 5px;
-	padding: 0 10px; 
+	padding: 0 10px;
 
 	font-size: 16px;
 	line-height: 28px;
@@ -523,7 +523,7 @@ section video{
 
 .section09{
 	height: auto;
-	background: url(../images/section01/video_BG2.jpg) no-repeat fixed center;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG2.jpg) no-repeat fixed center;
 	background-size: cover;
 }
 
@@ -576,7 +576,7 @@ section video{
 	color:#fff;
 	background-color: #555;
 
-	padding: 5px 10px; 
+	padding: 5px 10px;
 
 	font-size: 16px;
 	line-height: 28px;
@@ -592,7 +592,7 @@ section video{
 .map iframe.clicked{
 	pointer-events: auto; /*滑鼠事件打開*/
 }
-	
+
 
 
 /*____________________________________________________________________________*/
@@ -603,7 +603,7 @@ section video{
 
 .section01{
 	height: 100%;
-	background: url(../images/section01/video_BG.jpg) no-repeat scroll center;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG.jpg) no-repeat scroll center;
 	background-size: cover;
 }
 
@@ -677,7 +677,7 @@ section video{
 }
 
 .section07 .fee table tr td{
-	padding:0; 
+	padding:0;
 	width: 100%;
 
 	text-align: justify;
@@ -769,7 +769,7 @@ section video{
 	}
 	.section03 div div{
 		width: 90%;
-		 
+
 		font-size: 14px;
 		line-height: 24px;
 	}
@@ -799,7 +799,7 @@ section video{
 	}
 
 .section04 .themes{
-	padding: 10px 0 70px; 
+	padding: 10px 0 70px;
 
 	width: 90%;
 	font-size: 14px;
@@ -816,11 +816,11 @@ section video{
 
 .section05 .call_abstract{
 	width: 90%;
-	padding: 20px 0 40px; 
+	padding: 20px 0 40px;
 
 	font-size: 14px;
 	line-height: 24px;
-	text-align: justify;	
+	text-align: justify;
 }
 	.section05 .call_abstract span.h{
 		line-height: 60px;
@@ -832,7 +832,7 @@ section video{
 /*---section06---*/
 
 .section06{
-	padding: 50px 0; 
+	padding: 50px 0;
 }
 
 .section06 .important_date{
@@ -848,14 +848,14 @@ section video{
 	}
 
 .section06 .important_date table tr td{
-	padding:0; 
+	padding:0;
 	text-align: center;
 
 	display: block;
 	color: rgba(255, 199, 76, 1.00);
 
 	line-height: 32px;
-	margin: 10px 0 0; 
+	margin: 10px 0 0;
 
 	width: 100%;
 }
@@ -899,8 +899,8 @@ section video{
 .section08 .news{
 	width: 90%;
 	border-radius: 20px;
-	
-	padding: 0 40px 40px; 
+
+	padding: 0 40px 40px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -915,7 +915,7 @@ section video{
 	font-size: 16px;
 }
 	.section08 .news table tr td{
-		padding:5px 6px 5px 12px; 
+		padding:5px 6px 5px 12px;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
