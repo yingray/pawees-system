@@ -34,7 +34,8 @@ services:
     links:
       - mongo
     environment:
-      - CRON_SCHEDULE=1 1 * * 2
+      # - CRON_SCHEDULE=1 1 * * 2
+      - CRON_SCHEDULE=0 6 * * *
       - BACKUP_EXPIRE_DAYS=30
       - MONGO_PORT_27017_TCP_ADDR=mongo
       - MONGO_PORT_27017_TCP_PORT=27017
