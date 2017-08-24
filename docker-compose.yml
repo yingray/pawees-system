@@ -3,24 +3,26 @@ services:
   nginx:
     build: ./nginx
     links:
-        - node1:node1
+      - node
+      - public
     ports:
-        - "80:80"
-        - "443:443"
-  node1:
-    build: .
+      - "80:80"
+      - "443:443"
+  node:
+    build: ./node
     volumes:
-      - ./:/node
-    ports:
-      - "8080:8080"
+      - ./node:/app
+      - ./public:/public
     links:
       - mongo
-  paper:
-    build: ./files
-    volumes:
-      - ./files:/app
     ports:
-      - "8082:8082"
+      - "8080:8080"
+  public:
+    build: ./public
+    volumes:
+      - ./public:/app
+    ports:
+      - "8081:8081"
   mongo:
     image: mongo
     ports:
@@ -28,11 +30,12 @@ services:
   backup:
     image: yingray/mongodump
     volumes:
-      - ~/backup:/backup
+      - ~/Dropbox/database:/backup
     links:
       - mongo
     environment:
-      - CRON_SCHEDULE=1 1 * * 2
+      # - CRON_SCHEDULE=1 1 * * 2
+      - CRON_SCHEDULE=0 6 * * *
       - BACKUP_EXPIRE_DAYS=30
       - MONGO_PORT_27017_TCP_ADDR=mongo
       - MONGO_PORT_27017_TCP_PORT=27017

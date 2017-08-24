@@ -1,0 +1,6 @@
+--recursive 
+--compilers js:babel-core/register
+--require babel-polyfill
+--require ./test/setup.js
+--no-timeouts
+--inline-diffs

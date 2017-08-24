@@ -1,0 +1,968 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+	/*background-color:  ---背景底色*/
+	/*background-color:  ---重點色*/
+	/*background-color:  ---輔助色*/
+
+
+
+	/*margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;*/
+
+	/*-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+
+*{
+	font-family: sans-serif, 微軟正黑體, 黑體;
+}
+
+
+
+section, .welcome{
+	position: relative;
+	height: 100vh;
+}
+
+section video{
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	object-position: 50% 0;
+	object-fit: cover;
+}
+
+
+
+/*---section01---*/
+.section01{
+	height: 68%;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG.jpg) no-repeat fixed center;
+	background-size: cover;
+}
+
+.pawee_title{
+	/*置於影片之上 置中*/
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	width: 600px;
+	height: 150px;
+
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	background-position: 0 0;
+	background-image: url(../images/section01/PAWEE_01.svg);
+}
+	@keyframes pawees{
+		  0%{background-position: -25px 0;
+		  	 opacity: 0;}
+		100%{background-position: 0 0;
+			 opacity: 1;}
+	}
+
+	.pawee_p{
+		background-image: url(../images/section01/PAWEE_P.svg);
+		animation: pawees 0.5s 0s linear 1 backwards ;
+	}
+	.pawee_a{
+		background-image: url(../images/section01/PAWEE_A.svg);
+		animation: pawees 0.5s 0.2s linear 1 backwards ;
+	}
+	.pawee_w{
+		background-image: url(../images/section01/PAWEE_W.svg);
+		animation: pawees 0.5s 0.4s linear 1 backwards ;
+	}
+	.pawee_e{
+		background-image: url(../images/section01/PAWEE_E.svg);
+		animation: pawees 0.5s 0.6s linear 1 backwards ;
+	}
+	.pawee_ee{
+		background-image: url(../images/section01/PAWEE_EE.svg);
+		animation: pawees 0.5s 0.8s linear 1 backwards ;
+	}
+	.pawee_s{
+		background-image: url(../images/section01/PAWEE_S.svg);
+		animation: pawees 0.5s 1s linear 1 backwards ;
+	}
+
+
+
+/*---section02---*/
+/*置底於歡迎頁*/
+.section02{
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+	height: 16.66vw;
+
+	font-size: 0;
+
+	box-shadow:  0px 0px 30px 0px rgba(0,0,0,1);
+
+}
+
+.section02 div{
+	display: inline-block;
+	width: 33.33%;
+	height: 100%;
+}
+
+	.aboutus_time{
+		background: rgba(204, 204, 204, 1.00) url(../images/section02/info_time.svg) no-repeat center;
+		background-size: cover;
+	}
+	.aboutus_intro{
+		background: rgba(98, 153, 159, 1.00) url(../images/section02/info_title.svg) no-repeat center;
+		background-size: cover;
+	}
+	.aboutus_location{
+		background: rgba(16, 97, 116, 1.00) url(../images/section02/info_location.svg) no-repeat center;
+		background-size: cover;
+	}
+
+
+
+/*---section03---*/
+
+.section03{
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG8.jpg) no-repeat fixed center;
+	background-size: cover;
+
+	height: auto;
+}
+
+.section03 div{
+	padding: 100px 0px 225px;
+	margin: auto;
+	left: 0;
+	right: 0;
+
+	width: 100%;
+
+	font-family: 'Marcellus SC', serif;
+	text-align: center;
+}
+	.section03 h1{
+		color: #fff;
+		font-size: 48px;
+		font-weight: 600;
+		letter-spacing: 2px;
+
+		line-height: 200px;
+		height: 200px;
+	}
+	.section03 div div{
+		position: relative;
+		padding: 0;
+		width: 70%;
+
+		color: #fff;
+		font-size: 24px;
+		line-height: 36px;
+		letter-spacing: 2px;
+	}
+	.section03 div div:before,.section03 div div:after{
+		content: "";
+		position: absolute;
+
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: -20px;
+
+		height: 2px;
+		width: 300px;
+		background-color: #fff;
+	}
+	.section03 div div:after{
+		top: 85px;
+	}
+
+
+
+/*---section04---*/
+
+.section04{
+	z-index: 1;
+
+	height: auto;
+	background-color: rgba(252, 227, 146, 1.00);
+
+	box-shadow:  0px 0px 10px 0px rgba(0,0,0,1);
+
+}
+
+.section04 .themes_title{
+	position: absolute;
+	width: 800px;
+	height: 200px;
+
+	top: -200px;
+	margin: auto;
+	right: 0;
+	left: 0;
+
+	background: url(../images/section04/title.svg) no-repeat center;
+	background-size: contain;
+}
+	.section04 .bottom_title{
+		position: absolute;
+		width: 800px;
+		height: 200px;
+
+		bottom: -10px;
+		margin: auto;
+		right: 0;
+		left: 0;
+
+		background: url(../images/section04/bottom_title.svg) no-repeat center;
+		background-size: contain;
+	}
+
+.section04 .themes{
+	margin: auto;
+	left: 0;
+	right: 0;
+
+	width: 70%;
+	padding: 50px 0 150px;
+
+	color: #333;
+	font-size: 20px;
+	line-height: 36px;
+	letter-spacing: 2px;
+
+	font-family: 'Cuprum', sans-serif;
+}
+	.section04 .themes span{
+		font-weight: bold;
+		color: rgba(16, 97, 116, 1.00);
+	}
+	.section04 .themes span.h{
+		font-family: 'Marcellus SC', serif;
+
+		border:1px solid #333;
+		background-color: #333;
+
+		color: rgba(252, 227, 146, 1.00);
+		padding:5px 10px;
+
+		line-height: 70px;
+		font-size: 22px;
+	}
+
+
+
+/*---section05---*/
+
+.section05{
+	height: auto;
+	background-color: #fff;
+
+	border-style: double;
+	border-width: 0 0 5px 0;
+	border-color: #ccc;
+}
+
+.section05 .call_abstract{
+	margin: auto;
+	left: 0;
+	right: 0;
+
+	width: 70%;
+	padding: 50px 0;
+
+	color: #333;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: 2px;
+
+	font-family: 'Cuprum', sans-serif;
+
+}
+	.section05 .call_abstract span{
+		font-weight: bold;
+		color: rgba(1, 71, 140, 1.00);
+	}
+	.section05 .call_abstract span.h{
+		font-family: 'Marcellus SC', serif;
+
+		border:1px solid #333;
+		background-color: #333;
+
+		color: #fff;
+		padding:5px 10px;
+
+		line-height: 80px;
+		font-size: 20px;
+	}
+
+
+
+/*---section06---*/
+
+.section06{
+	height: auto;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG5.jpg) no-repeat fixed center;
+	background-size: cover;
+
+	padding: 50px 0 100px;
+}
+
+.section06 .important_date{
+	width: 100%;
+
+	text-align: center;
+	color: #fff;
+	font-family: 'Marcellus SC', serif;
+	font-size: 26px;
+	letter-spacing: 1px;
+	line-height: 100px;
+}
+
+.section06 .important_date table{
+	position: relative;
+	width: 100%;
+	line-height: 50px;
+	font-size: 18px;
+}
+	.section06 .important_date table:before{
+		content: "";
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: -30px;
+
+		height: 2px;
+		width: 250px;
+		background-color: #fff;
+	}
+
+.section06 .important_date table tr td{
+	padding:0 25px;
+	text-align: right;
+	width: 50%;
+}
+	.section06 .important_date table tr td span{
+		color: rgba(255, 199, 76, 1.00);
+		font-size: 20px;
+		border: 1px solid #fff;
+
+		padding: 5px 10px;
+	}
+	.section06 .important_date table tr td~td{
+		text-align: left;
+	}
+
+
+
+/*---section07---*/
+
+.section07{
+	height: auto;
+	padding: 50px 0 75px;
+	background-color: rgba(98, 153, 159, 1.00);
+}
+
+.section07 .fee{
+	width: 100%;
+	text-align: center;
+	color: #333;
+	font-family: 'Marcellus SC', serif;
+
+	font-size: 26px;
+	letter-spacing: 1px;
+	line-height: 100px;
+}
+
+.section07 .fee table{
+	position: relative;
+	margin: auto;
+	left: 0;
+	right: 0;
+
+	width: 90%;
+	line-height: 40px;
+	font-size: 18px;
+
+	font-family: 'Cuprum', sans-serif,微軟正黑體;
+
+}
+	.section07 .fee table:before{
+		content: "";
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: -30px;
+
+		height: 2px;
+		width: 250px;
+		background-color: #333;
+	}
+
+.section07 .fee table tr td{
+	padding:0 25px;
+	width: 50%;
+
+	text-align: justify;
+	text-align-last: right;
+	-moz-text-align-last: right;
+}
+	.section07 .fee table tr td~td{
+		text-align-last: left;
+		-moz-text-align-last: left;
+	}
+	.section07 .fee table tr td span{
+		font-size: 20px;
+		border: 1px solid #333;
+		background: #333;
+		color: rgba(98, 153, 159, 1.00);
+
+		padding: 5px 10px;
+		font-family: 'Marcellus SC', serif;
+		line-height: 70px;
+	}
+
+
+
+/*---section08---*/
+
+.section08{
+	height: auto;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG2.jpg) no-repeat fixed center;
+	background-size: cover;
+
+	padding: 200px 0;
+}
+
+.section08 .news{
+	margin: auto;
+	left: 0;
+	right: 0;
+
+	width: 60%;
+	border-radius: 25px;
+
+	background-color: rgba(255,255,255,0.5);
+	text-align: center;
+
+	padding: 0 50px 50px;
+}
+
+.section08 .news h1{
+	color:#333;
+	font-size: 42px;
+	font-family: 'Dancing Script', cursive;
+	line-height: 100px;
+	font-weight: bold;
+}
+
+.section08 .news table{
+	position: relative;
+
+	width: 100%;
+	line-height: 40px;
+	font-size: 18px;
+
+	font-family: 'Cuprum', sans-serif,微軟正黑體;
+	letter-spacing: 2px;
+}
+
+.section08 .news table tr{
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: #aaa;
+}
+
+.section08 .news table tr td{
+	text-align: center;
+	width: 20%;
+	color:#555;
+	background-color: #ccc;
+
+	padding:5px 6px;
+}
+
+.section08 .news table tr td:nth-child(2){
+	text-align: left;
+	width: 80%;
+}
+
+.section08 .news table tr td a{
+	float: right;
+	text-decoration: none;
+	color:#fff;
+	background-color: #555;
+
+	margin: 6px 5px;
+	padding: 0 10px;
+
+	font-size: 16px;
+	line-height: 28px;
+}
+
+
+
+/*---section09---*/
+
+.section09{
+	height: auto;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG2.jpg) no-repeat fixed center;
+	background-size: cover;
+}
+
+.section09_venue{
+	padding: 15px 0 0;
+	text-align: center;
+
+	background: -webkit-linear-gradient(180deg,rgba(240, 237, 229, 0.5) 0%,rgba(240, 237, 229, 1) 50%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg,rgba(240, 237, 229, 0.5) 0%,rgba(240, 237, 229, 1) 50%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg,rgba(240, 237, 229, 0.5) 0%,rgba(240, 237, 229, 1) 50%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg,rgba(240, 237, 229, 0.5) 0%,rgba(240, 237, 229, 1) 50%); /* Standard syntax */
+}
+
+.section09_venue h1{
+	position: relative;
+	color:#333;
+	font-size: 26px;
+
+	font-family: 'Marcellus SC', serif;
+	letter-spacing: 1px;
+	line-height: 100px;
+}
+	.section09_venue h1:after{
+		content: "";
+		position: absolute;
+		bottom: 28px;
+		margin: auto;
+		left: 0;
+		right: 0;
+
+		height: 2px;
+		width: 90px;
+		background-color: #333;
+	}
+
+.section09_venue .venue_info{
+	color: #333;
+	position: relative;
+
+	width: 100%;
+	line-height: 40px;
+	font-size: 18px;
+
+	font-family: 'Cuprum', sans-serif,微軟正黑體;
+	letter-spacing: 2px;
+}
+
+.section09_venue .venue_info a.web{
+	text-decoration: none;
+	color:#fff;
+	background-color: #555;
+
+	padding: 5px 10px;
+
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.map iframe{
+	width: 100%;
+	height: 300px;
+	display: block;
+	pointer-events: none; /*滑鼠事件先關掉*/
+	position: relative; /* IE needs a position other than static */
+}
+.map iframe.clicked{
+	pointer-events: auto; /*滑鼠事件打開*/
+}
+
+
+
+/*____________________________________________________________________________*/
+
+/*==========平板版本==========*/
+
+@media screen and (max-width: 1080px) {/*IPAD尺寸*/
+
+.section01{
+	height: 100%;
+	background: url(https://s3-ap-northeast-1.amazonaws.com/pawees/section01/video_BG.jpg) no-repeat scroll center;
+	background-size: cover;
+}
+
+/*平板以下把影片拿掉，因為目前手持裝置對於影片自動播放的設定都不同，所以直接換圖片*/
+.full-video{
+	display: none;
+}
+
+
+
+.section03{
+	background-attachment: scroll;
+}
+
+.section03 div{
+	padding: 100px 0px 200px;
+}
+	.section03 h1{
+		font-size: 36px;
+	}
+	.section03 div div{
+		width: 90%;
+		font-size: 20px;
+	}
+	.section03 div div:before,.section03 div div:after{
+		width: 280px;
+	}
+
+
+
+/*---section04---*/
+
+.section04 .themes_title{
+	width: 600px;
+	height: 150px;
+
+	top: -150px;
+}
+
+	.section04 .bottom_title{
+		width: 600px;
+		height: 150px;
+
+		bottom: -5px;
+	}
+
+.section04 .themes{
+	width: 70%;
+}
+
+
+
+.section06{
+	background-attachment: scroll;
+}
+	.section06 .important_date table tr td span{
+		background-color: rgba(255,255,255,0.9);
+	}
+
+
+
+/*---section07---*/
+
+.section07 .fee{
+	width: 100%;
+}
+
+.section07 .fee table{
+	line-height: 36px;
+	font-size: 18px;
+}
+
+.section07 .fee table tr td{
+	padding:0;
+	width: 100%;
+
+	text-align: justify;
+	text-align-last: center;
+	-moz-text-align-last: center;
+
+	display: block;
+}
+	.section07 .fee table tr td~td{
+		text-align-last: center;
+		-moz-text-align-last: center;
+	}
+	.section07 .fee table tr td span{
+		font-size: 20px;
+		line-height: 90px;
+	}
+
+
+
+/*---section08---*/
+
+.section08{
+	background-attachment: scroll;
+}
+
+.section08 .news table{
+	line-height:32px;
+	font-size: 16px;
+}
+
+.section08 .news table tr td a{
+	font-size: 12px;
+	line-height: 24px;
+}
+
+
+
+/*---section09---*/
+
+.section09{
+	background-attachment: scroll;
+}
+
+
+
+}
+
+/*____________________________________________________________________________*/
+
+/*==========手機版本==========*/
+
+@media screen and (max-width: 768px) {
+
+.welcome{
+	height: auto;
+}
+.section01{
+	height: 100vh;
+}
+
+.pawee_title{
+	width: 80%;
+	height: 20vw;
+}
+
+
+
+.section02{
+	position: relative;
+	height: auto;
+}
+.section02 div{
+	width: 100%;
+	height: 50vw;
+}
+
+
+
+.section03 div{
+	padding: 140px 0px 100px;
+}
+	.section03 h1{
+		font-size: 18px;
+		line-height: 36px;
+		height: 130px;
+	}
+	.section03 h1 span{
+		display: block;
+	}
+	.section03 div div{
+		width: 90%;
+
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.section03 div div:before,.section03 div div:after{
+		top: -10px;
+		width: 200px;
+	}
+	.section03 div div:after{
+		top: 55px;
+	}
+
+
+
+/*---section04---*/
+
+.section04 .themes_title{
+	width: 320px;
+	height: 80px;
+
+	top: -80px;
+}
+	.section04 .bottom_title{
+		width: 320px;
+		height: 80px;
+
+		bottom: -2px;
+	}
+
+.section04 .themes{
+	padding: 10px 0 70px;
+
+	width: 90%;
+	font-size: 14px;
+	line-height: 28px;
+}
+	.section04 .themes span.h{
+		line-height: 68px;
+		font-size: 16px;
+	}
+
+
+
+/*---section05---*/
+
+.section05 .call_abstract{
+	width: 90%;
+	padding: 20px 0 40px;
+
+	font-size: 14px;
+	line-height: 24px;
+	text-align: justify;
+}
+	.section05 .call_abstract span.h{
+		line-height: 60px;
+		font-size: 16px;
+	}
+
+
+
+/*---section06---*/
+
+.section06{
+	padding: 50px 0;
+}
+
+.section06 .important_date{
+	font-size: 22px;
+}
+
+.section06 .important_date table{
+	line-height: 50px;
+	font-size: 16px;
+}
+	.section06 .important_date table:before{
+		width: 220px;
+	}
+
+.section06 .important_date table tr td{
+	padding:0;
+	text-align: center;
+
+	display: block;
+	color: rgba(255, 199, 76, 1.00);
+
+	line-height: 32px;
+	margin: 10px 0 0;
+
+	width: 100%;
+}
+	.section06 .important_date table tr td span{
+		font-size: 20px;
+	}
+	.section06 .important_date table tr td~td{
+		text-align: center;
+		color: #fff;
+
+		margin: 5px 0 25px;
+	}
+
+
+
+/*---section07---*/
+
+.section07 .fee{
+	font-size: 22px;
+}
+
+.section07 .fee table{
+	line-height: 28px;
+	font-size: 14px;
+}
+	.section07 .fee table:before{
+		width: 220px;
+	}
+	.section07 .fee table tr td span{
+		font-size: 20px;
+	}
+
+
+
+/*---section08---*/
+
+.section08{
+	padding: 100px 0;
+}
+
+.section08 .news{
+	width: 90%;
+	border-radius: 20px;
+
+	padding: 0 40px 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.section08 .news h1{
+	font-size: 36px;
+}
+
+.section08 .news table{
+	line-height: 32px;
+	font-size: 16px;
+}
+	.section08 .news table tr td{
+		padding:5px 6px 5px 12px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+
+		display: inline-block;
+		text-align: left;
+		width: 100%;
+	}
+	.section08 .news table tr td:nth-child(2){
+		width: 100%;
+	}
+
+
+
+/*---section09---*/
+
+.section09_venue{
+	padding: 15px 10px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.section09_venue h1{
+	font-size: 22px;
+}
+	.section09_venue h1:after{
+		bottom: 28px;
+		width: 78px;
+	}
+
+.section09_venue .venue_info{
+	color: #333;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.section09_venue .venue_info a.web{
+	font-size: 14px;
+}
+
+.map iframe{
+	height: 400px;
+}
+
+
+
+}
+
+

@@ -1,0 +1,12 @@
+{
+  "name": "pawees-public",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.1",
+    "morgan": "^1.8.2"
+  }
+}

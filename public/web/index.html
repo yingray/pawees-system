@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<title>PAWEES 2017</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="./css/main.css" rel="stylesheet" type="text/css">
+
+	<link rel="bookmark" href="./images/pawees.ico">
+	<link rel="shortcut icon" href="./images/pawees.ico">
+
+<!-- Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+ 	rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<!-- fonts -->
+ 	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+ 	<!-- font-family: 'Cuprum', sans-serif; -->
+
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<!-- font-family: 'Dancing Script', cursive; -->
+
+	<link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+	<!-- font-family: 'Marcellus SC', serif; -->
+
+	<link href="https://fonts.googleapis.com/css?family=Montaga" rel="stylesheet">
+	<!-- font-family: 'Montaga', serif; -->
+
+	<link href="https://fonts.googleapis.com/css?family=Ramaraja" rel="stylesheet">
+	<!-- font-family: 'Ramaraja', serif; -->
+
+
+</head>
+
+
+<!-- ====================================================================================== -->
+
+
+<body>
+
+
+
+<!-- 主頁面內容 -->
+<div class="wrap">
+
+		<!-- header拉出來釘在wrap上面 -->
+		<!-- 一開始先addClass"header2"消失，捲上去再removeClass"header2"出現 -->
+		<header>
+
+			<div class="banner">
+
+				<!-- logo -->
+				<div class="logo">
+					<img src="images/PAWEES-logo.png" alt="">
+					<img src="images/PAWEE2017.svg" alt="" class="logo_title">
+				</div>
+
+				<!-- 三明治選單 -->
+				<div class="sandwichclick">
+					<div class="sandwich"></div>
+				</div>
+
+				<!-- fixed的等候上傳 ｜ 要出現加上fixed_shadow2 -->
+				<div class="fixed_shadow" data-loading="pawees">
+					<div class="wait_BG">
+						<!-- PAWEES標題 -->
+						<div class="pawee_wait pawee_wait_p"></div>
+						<div class="pawee_wait pawee_wait_a"></div>
+						<div class="pawee_wait pawee_wait_w"></div>
+						<div class="pawee_wait pawee_wait_e"></div>
+						<div class="pawee_wait pawee_wait_ee"></div>
+						<div class="pawee_wait pawee_wait_s"></div>
+						<div class="pawee_wait"></div>
+
+						<div class="wait_txt">
+							Please wait a moment while your file uploads.
+						</div>
+					</div>
+				</div>
+
+				<!-- 上方選單列 -->
+				<nav>
+					<ul>
+						<!-- 當前頁面掛上here的class -->
+						<li class="">
+							<a href="javascript:;">About Us</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">Call for Abstracts</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">Important Dates</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">Announcement</a>
+						</li>
+						<li class="">
+							<a href="javascript:;">Venue</a>
+						</li>
+
+						<!-- 最後頁尾是contact us -->
+						<li class="joinicon">
+							<a href="javascript:;">Registration</a>
+						</li>
+					</ul>
+				</nav>
+
+
+				<!-- 投稿畫面 -->
+				<div class="fixed_shadowbg">
+
+					<ul>
+						<!-- 當前頁面掛上write的class -->
+						<li class="write">
+							Member Account
+						</li>
+						<li class="">
+							Registration Information
+						</li>
+						<li class="">
+							Accommodation
+						</li>
+						<li class="">
+							Technical Tour
+						</li>
+						<li class="">
+							Flight information
+						</li>
+						<li class="">
+							Abstract Submission
+						</li>
+					</ul>
+
+
+				</div>
+
+				<div class="Registration_Page">
+
+					<form class="write_form account">
+						<fieldset>
+							<div class="form_title">Member Account</div>
+
+							<div class="login" data-log="signup">
+								<div class="block">
+									<h1>SIGN UP</h1>
+
+									<input type="email" name="email" placeholder="Email">
+									<input type="password" name="password" placeholder="Password">
+
+									<!--<p>By clicking Sign Up, you agree on our <a onclick="clickLegal('tac')">terms and conditions</a>, <a onclick="clickLegal('pp')">privacy policy</a>.</p>-->
+									<div class="button">SIGN UP</div>
+								</div>
+							</div>
+
+							<div class="or">or</div>
+
+							<div class="login" data-log="login">
+								<div class="block">
+
+									<h1>LOG IN</h1>
+
+									<input type="email" name="email" placeholder="Email">
+									<input type="password" name="password" placeholder="Password">
+
+									<div class="button">LOG IN</div>
+
+								</div>
+							</div>
+
+
+
+							<!--<div class="next_step">-->
+								<!--Next Step-->
+								<!--<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>-->
+							<!--</div>-->
+						</fieldset>
+					</form>
+
+
+
+					<form class="account">
+						<fieldset>
+							<div class="form_title">Member Account</div>
+
+							<div class="login logout" data-log="logout">
+								<div class="block">
+
+									<h1>Successfully !</h1>
+
+									<!-- <br>
+									您的帳號已申請成功！<br>
+									請盡快依照步驟完成註冊資料填寫，
+									並於最後一頁按送出完成註冊程序。
+									<br> -->
+
+									<!-- <br>
+									您的註冊資料已於20170420更新成功！<br>
+									如果你想要修改資料請按右下角的修改按鈕，
+									並依照步驟修改完畢再次上傳資料。
+									<br> -->
+									<p class="revision">
+										Your account has been applied successfully.<br>
+										Please fill out all the forms to complete the registration until the last page.<br>
+									</p>
+
+									<input type="email" name="email" placeholder="Email" disabled>
+
+									<div class="button">LOG OUT</div>
+
+								</div>
+							</div>
+
+
+
+							<div class="next_step">
+								Revise Information
+								<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+							</div>
+						</fieldset>
+					</form>
+
+
+
+					<form>
+						<div class="form_title">Registration Information</div>
+						<fieldset>
+
+							<h1>Welcome</h1>
+
+							Please fill in the following forms and press the submit button in the last page to complete the registration<br>
+							<span>＊ is required to fill in</span><br>
+							<br>
+							<br>
+
+
+							<!--Delegate Form Start-->
+							<!-- 必填label class="required" -->
+							<label class="required">Account</label>
+							<input type="email" name="email" placeholder="Email" disabled style="background: #ddd;" class="long">
+							<input type="hidden" name="email">
+							<input type="hidden" name="password">
+							<br>
+
+							<label class="required">Title</label>
+							<select name="title" required>
+								<option>Mr.</option>
+								<option>Mrs.</option>
+								<option>Ms.</option>
+								<option>Dr.</option>
+								<option>Prof.</option>
+								<option>Others</option>
+							</select>
+							<br>
+
+
+							<label class="required">First Name</label>
+							<input type="text" name="firstName" required>
+
+							<label class="required">Last Name</label>
+							<input type="text" name="lastName" required>
+							<br>
+
+							<label>Country</label>
+							<input type="text" name="country">
+							<br>
+
+							<label>Gender</label>
+							<select name="gender" required>
+								<option>Male</osption>
+								<option>Female</option>
+							</select>
+							<br>
+
+							<label>Job position</label>
+							<input type="text" name="position">
+							<br>
+
+							<label class="required">Organization</label>
+							<input type="text" name="organization" class="long" required>
+							<br>
+
+							<label>Address</label>
+							<input type="text" name="address" class="long">
+							<br>
+
+							<label>Mobile</label>
+							<input type="text" name="mobile">
+							<br>
+
+							<label>Phone</label>
+							<input type="text" name="phone">
+							<br>
+
+							<label>Fax</label>
+							<input type="text" name="fax">
+							<br>
+
+							<label>Date of Birth</label>
+							<input type="text" name="dateOfBirth" placeholder="1900-00-00">
+							<br>
+
+							<label>Meals</label>
+							<select name="meals">
+								<option>non-vegetarian</option>
+								<option>vegetarian</option>
+							</select>
+							<br>
+
+
+							<!--Delegate Form End-->
+
+						</fieldset>
+						<div class="pre_step">
+							<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+							Member Account
+						</div>
+
+						<div class="next_step">
+							Next Step
+							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+						</div>
+					</form>
+
+					<form>
+						<div class="form_title">Accommodation</div>
+						<fieldset>
+
+
+							<!--Accom Form Start-->
+							<label>Hotel</label>
+							<select name="hotel">
+								<option>Fresh Fields Hotel</option>
+								<option>Others</option>
+							</select>
+							<br>
+
+							<label>Check In</label>
+							<input type="date" name="checkIn" placeholder="checkIn">
+							<br>
+
+							<label>Check Out</label>
+							<input type="date" name="checkOut" placeholder="checkOut">
+							<br>
+							<br>
+
+							<h1>Recommended hotel</h1>
+							<br>
+							清新溫泉飯店 Fresh Fields Hotel
+							<a href="https://www.freshfields.com.tw/" target="_blank" class="web">
+							<i class="fa fa-link" aria-hidden="true"></i> WEB</a>
+							<br>
+							<br>
+							<!-- * Discounted prices <a href="https://drive.google.com/open?id=0B97DZ1rynygqc1B2eFpNTmJNZDUxRHQ1cld1OGtoTWtGYVYw" target="_blank" class="web pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
+							<br> -->
+							* Discounted prices <a href="https://drive.google.com/open?id=0B1rwbehyY1WSVXp6cFJtbWxlVXc" target="_blank" class="web pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>
+							<br>
+							<br>
+							* Deadline to Hold Reservation: 2017/09/30
+							<br>
+
+
+							<!--Accom Form End-->
+
+						</fieldset>
+						<div class="pre_step">
+							<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+							Previous Step
+						</div>
+						<div class="next_step">
+							Next Step
+							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+						</div>
+					</form>
+
+
+					<form>
+						<div class="form_title">Technical Tour</div>
+						<fieldset>
+							<h1>Hu-Shan Reservoir
+								<a href="http://www.wracb.gov.tw/ct.asp?xItem=2120&CtNode=924&mp=7" target="_blank" class="web maptag">
+									<i class="fa fa-link" aria-hidden="true"></i> WEB
+								</a>
+							</h1>
+							<div class="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.483175887029!2d120.62254621498028!3d23.694433584617006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ecf2df6b6bb37%3A0x72b328fa7a31dfe3!2z5rmW5bGx5rC05bqr!5e0!3m2!1szh-TW!2stw!4v1492362346744" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+
+							<!--Technical Tour Information Form Start -->
+							<label style="width: 120px;">Join the Tour?</label>
+							<input type="radio" name="tour" value="yes" placeholder="tour" checked>yes
+							<input type="radio" name="tour" value="no" placeholder="tour">no
+							<!--Technical Tour Information Form End -->
+
+						</fieldset>
+						<div class="pre_step">
+							<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+							Previous Step
+						</div>
+						<div class="next_step">
+							Next Step
+							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+						</div>
+					</form>
+
+
+
+					<form>
+
+						<div class="form_title">Flight Information</div>
+						<fieldset>
+
+							<!--Flight Information Form Start -->
+								<h1>Arrival</h1>
+								<label>Airline</label>
+								<input type="text" name="airline" flight="arrival"><br>
+								<label>Flight</label>
+								<input type="text" name="flight" flight="arrival"><br>
+								<label>Date</label>
+								<input type="date" name="date" flight="arrival"><br>
+								<label>Time</label>
+								<input type="time" name="time" flight="arrival"><br>
+								<br>
+								<h1>Departure</h1>
+								<label>Airline</label>
+								<input type="text" name="airline" flight="departure"><br>
+								<label>Flight</label>
+								<input type="text" name="flight" flight="departure"><br>
+								<label>Date</label>
+								<input type="date" name="date" flight="departure"><br>
+								<label>Time</label>
+								<input type="time" name="time" flight="departure">
+							<!--Flight Information Form End -->
+
+						</fieldset>
+						<div class="pre_step">
+							<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+							Previous Step
+						</div>
+						<div class="next_step">
+							Next Step
+							<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+						</div>
+					</form>
+
+					<form class="abstract">
+						<div class="form_title">Abstract Submission</div>
+						<fieldset>
+                            <p class="revision">
+                                <!--<br>-->
+                                    <!--20170404 Revision ｜ <i class="fa fa-file-pdf-o" aria-hidden="true"></i>-->
+                                    <!--<a href="doc/pdf" target="_blank">-->
+                                         <!--the title of PDF-->
+                                    <!--</a>-->
+                                <!--<br>-->
+                                <!--<br>-->
+                                <!--<br>-->
+
+                                <!--<h1>Edit</h1>-->
+                            </p>
+
+							<!--Abstract Form Start-->
+							<label>Role</label>
+							<select name="role" required>
+								<option>General</option>
+								<option>Student</option>
+							</select>
+							<br>
+
+							<label>Session</label>
+							<select name="session" required>
+								<!-- <option>Topic 1 | Sustainable water use and ecologically sustainable development</option>
+								<option>Topic 2 | Development of rural society with water in Asia</option> -->
+								<option>Topic 1 | Sustainable development with respect to water and ecology</option>
+								<option>Topic 2 | Harmonizing rural development with water resources management</option>
+								<option>Topic 3 | Sustainable paddy farming</option>
+								<option>Topic 4 | Integrated watershed management</option>
+								<option>Topic 5 | Droughts and flood disaster risk management</option>
+							</select>
+
+							<label>Type</label>
+							<select name="type" required>
+								<option>Oral Presentation</option>
+								<option>Poster</option>
+								<option>Representative</option>
+								<option>Observer</option>
+							</select>
+							<br>
+
+							<label>Title</label>
+							<input type="text" name="title" class="title">
+							<br>
+							<br>
+
+							<label>Affiliations</label>
+							<ol>
+								<input type="button" value="+" name="affiliations" data-type="array"/>
+							</ol>
+							<br>
+
+							<label>Authors</label>
+							<ol>
+								<input type="button" value="+" name="authors" data-type="array"/>
+							</ol>
+							<br>
+
+							<label>Abstract</label>
+							<textarea name="abstract" cols="100" rows="10"></textarea>
+							<br>
+							<br>
+
+							<label>Keywords</label>
+							<ol>
+								<input type="button" value="+" name="keywords" data-type="array"/>
+							</ol>
+							<!--Abstract Form End-->
+
+						</fieldset>
+						<div class="pre_step">
+							<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+							Previous Step
+						</div>
+						<div class="submit_info">
+							Submit
+						</div>
+					</form>
+
+
+
+					<div class="Registration_Page_close">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</div>
+
+				</div>
+
+
+
+			</div><!-- banner包全部 -->
+
+		</header>
+
+
+
+	<!-- 視差捲動 parallax-->
+	<content>
+		<div class="welcome">
+		<!-- 第一幕 影片導入 -->
+			<section class="section01">
+
+				<!-- fixed BG -->
+				<!-- <img src="images/section01/video_BG.jpg"> -->
+
+				<video class="full-video" loop="loop" autoplay="autoplay" poster="">
+					<!-- <source src="images/video/water07.mp4" type="video/mp4"> -->
+						<source src="https://s3-ap-northeast-1.amazonaws.com/pawees/water07.mp4" type="video/mp4">
+				</video>
+
+				<!-- PAWEES大標題 -->
+				<div class="pawee_title pawee_p"></div>
+				<div class="pawee_title pawee_a"></div>
+				<div class="pawee_title pawee_w"></div>
+				<div class="pawee_title pawee_e"></div>
+				<div class="pawee_title pawee_ee"></div>
+				<div class="pawee_title pawee_s"></div>
+				<div class="pawee_title"></div>
+
+
+			</section>
+
+
+		<!-- ====================================================================================== -->
+
+
+		<!-- 第二幕 About Us -->
+			<section class="section02">
+
+				<div class="aboutus_intro"></div>
+				<div class="aboutus_time"></div>
+				<div class="aboutus_location"></div>
+
+			</section>
+
+		</div>
+		<!-- ====================================================================================== -->
+
+
+		<!-- 第三幕  -->
+			<section class="section03">
+				<div>
+					<h1>PAWEES 2017 <span>International Conference</span> </h1>
+
+					<div>
+						November 9-10, 2017<br>
+						Taichung, Taiwan<br>
+						<br>
+						<br>
+						<!-- The conference objective is to create an interactive platform for paddy and water environment related researchers, scientists, practitioners, policy makers and other professionals from Asia-Pacific Region and else around the world to share and present their novel advances, research findings, perspectives and experiences in response to, but not limited to, sustainable water and environmental management. -->
+						The objective of PAWEES 2017 is to provide an interactive platform for researchers, practitioners, policy makers, and other professionals in the field of paddy and water environment from around the globe to present and share their novel advances, research findings, perspectives, and experiences to foster sustainable water and environmental management.
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+		<!-- ====================================================================================== -->
+
+
+		<!-- 第四幕  -->
+			<section class="section04">
+
+				<div class="themes_title"></div>
+				<div class="themes">
+					<span class="h">General session</span><br>
+					<!-- The conference pivots on the general theme “<span>Sustainable Water and Environmental Management</span>” accompanied with the following focal topics:<br>  -->
+					The scope of the PAWEES 2017 Conference is on <span>Sustainable Water and Environmental Management</span>. Technical programme comprises the following topics:<br>
+					Topic 1 - Sustainable development with respect to water and ecology<br>
+					Topic 2 - Harmonizing rural development with water resources management<br>
+					Topic 3 - Sustainable paddy farming<br>
+					Topic 4 - Integrated watershed management<br>
+					Topic 5 - Droughts and flood disaster risk management<br>
+					<br>
+					<span class="h">Student session</span><br>
+					“<span>Sustainable Water and Environmental Management</span>”
+				</div>
+
+				<div class="bottom_title"></div>
+
+			</section>
+
+
+		<!-- ====================================================================================== -->
+
+
+		<!-- 第五幕  -->
+			<section class="section05">
+
+				<div class="call_abstract">
+					<!-- Authors are invited to submit abstracts to the scientific committee of the conference. The notification of acceptance will be dispatched after the decision making from the scientific committee. Student sessions will be operated separately.
+					<br>
+					<br> -->
+					<span>The abstract submission process for PAWEES 2017 will be through an online submission portal. Authors are requested to create an account and submit their abstracts for review.</span>
+					<br>
+					<br>
+
+					<span class="h">Oral presentation</span><br>
+					Time allotment for each oral presentation will be 25 minutes, including 20 minutes for presentation and 5 minutes for Q & A. Session rooms are equipped with standard PowerPoint presentation facilities.<br>
+					<br>
+					<span class="h">Poster presentation</span><br>
+					<!-- Poster boards are 8' high with a surface of 4' x 6' and are placed in rows in a poster room. Presenters are asked to be at their assigned poster board during the entire length of the poster session. -->
+					All posters should be made in A1 size. Poster boards will be provided during the poster session.
+				</div>
+
+			</section>
+
+
+		<!-- ====================================================================================== -->
+
+
+		<!-- 第六幕  -->
+			<section class="section06">
+
+					<div class="important_date">
+						IMPORTANT DATES
+						<table>
+							<tr>
+								<td>Abstract Submission Deadline</td>
+								<td>August 31, 2017</td>
+							</tr>
+							<tr>
+								<td>Notification of Acceptance</td>
+								<td>September 30, 2017</td>
+							</tr>
+							<tr>
+								<td><span>Registration Deadline</span></td>
+								<td>September 30, 2017</td>
+							</tr>
+						</table>
+					</div>
+
+			</section>
+
+
+		<!-- ====================================================================================== -->
+
+
+		<!-- 第七幕  -->
+			<section class="section07">
+
+				<div class="fee">
+					REGISTRATION FEES
+					<table>
+						<tr>
+							<td>
+							<span>International participants</span><br>
+							<!-- The registration fees are USD 200 (NTD 6,400) for adults, and USD 100 (NTD 3,200) for students and accompanying persons. The registered delegates and participants shall be provided during the Conference with a conference kit (programs and proceedings), official snacks, lunches and reception dinner, attendance in the opening program, and a field trip. Only payments and issuance of receipts will be done on site. -->
+							The standard registration fee is 200 US dollars (or equivalently, 6,400 Taiwan dollars). For
+							students and accompanying persons, the registration fee is 100 US dollars (or 3,200 Taiwan
+							dollars). The registration fee covers conference kit (program book and proceedings), admission
+							to opening ceremony, plenary sessions, scientific sessions, break refreshments, lunch,
+							reception banquet, and field trip. Hotel accommodation and related travel costs
+              are not included in the registration fee.
+              <br>
+              For international participants, registration fee will be paid on site. Payment can only be made
+							by cash in either US dollars or Taiwan dollars. Please note that we do NOT accept credit card
+							payment of the registration fee.
+							</td>
+							<td>
+							<span>Local participants</span><br>
+							The registration fee is NTD 1600 (NTD 600 for the participation in the Conference only). Participants are requested to remit payments through postal order (郵政劃撥帳號：00114264；戶名：社團法人台灣農業工程學會) before 30 September, 2017. Issuance of receipts will be done on site or sent via email.
+							</td>
+						</tr>
+					</table>
+				</div>
+
+			</section>
+
+
+		<!-- ====================================================================================== -->
+
+
+		<!-- 第八幕  -->
+			<section class="section08">
+
+				<div class="news">
+					<h1>Announcement</h1>
+
+					<table>
+						<tr>
+							<td>20170301</td>
+							<td>1st ANNOUNCEMENT: CALL FOR ABSTRACT
+								<a href="doc/20170301-PAWEES-2017-1st-announcement.doc">
+									<i class="fa fa-file" aria-hidden="true"></i> DOC
+								</a>
+								<a href="doc/20170301-PAWEES-2017-1st-announcement.pdf" target="_blank">
+									<i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>20170821</td>
+							<td>2nd ANNOUNCEMENT: CALL FOR ABSTRACT
+								<a href="doc/20170821_PAWEES-2017-2nd-announcement.doc">
+									<i class="fa fa-file" aria-hidden="true"></i> DOC
+								</a>
+								<a href="doc/20170821_PAWEES-2017-2nd-announcement.pdf" target="_blank">
+									<i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+								</a>
+							</td>
+            </tr>
+            <tr>
+							<td>20170824</td>
+							<td>Session Program
+								<a href="doc/08222017_PAWEES 2017_Session Program.doc">
+									<i class="fa fa-file" aria-hidden="true"></i> DOC
+								</a>
+								<a href="doc/08222017_PAWEES 2017_Session Program.pdf" target="_blank">
+									<i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF
+								</a>
+							</td>
+						</tr>
+					</table>
+
+
+					<br>
+					<br>
+					<br>
+
+
+					<h1>Program</h1>
+
+					<table>
+						<tr>
+							<td>20171108</td>
+							<td>Arrival</td>
+						</tr>
+
+						<tr>
+							<td>20171109</td>
+							<td>
+								PAWEES 2017 International Conference<br>
+								Award Ceremony, Annual Meeting
+							</td>
+						</tr>
+
+						<tr>
+							<td>20171110</td>
+							<td>
+								Technical Tour: Hu-Shan Reservoir（湖山水庫）
+								<a href="http://www.wracb.gov.tw/ct.asp?xItem=2120&CtNode=924&mp=7" target="_blank">
+									<i class="fa fa-link" aria-hidden="true"></i> WEB
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>20171110</td>
+							<td>Departure</td>
+						</tr>
+
+					</table>
+
+
+				</div>
+
+			</section>
+
+
+		<!-- ====================================================================================== -->
+
+
+		<!-- 第九幕  -->
+			<section class="section09">
+				<div class="section09_venue">
+					<h1>VENUE</h1>
+					<div class="venue_info">
+						Nan-Shan Education & Training Center<br>
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						No. 300, Cheng-gong W. Rd., Wuri Dist., Taichung City, Taiwan<br>
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						+886-4-2334-180<br>
+
+						<a href="http://www.ns-etc.com.tw/etc/eng/traffic/traffic01.jsp" target="_blank" class="web">
+							<i class="fa fa-link" aria-hidden="true"></i>
+							WEB
+						</a><br>
+
+						<br>
+					</div>
+
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.9796189519357!2d120.58558211479216!3d24.137353884400078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693ef73d1325ad%3A0xb9daca9495d7e6b7!2z5Y2X5bGx5Lq65aO95pWZ6IKy6KiT57e05Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1488475396300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+			</section>
+
+
+		<!-- ====================================================================================== -->
+
+
+			<footer>
+					<div class="organizers">
+						<h1>ORGANIZERS</h1>
+
+						International Society of Paddy and Water Environment Engineering (PAWEES)<br>
+						Taiwan Agricultural Engineers Society (TAES)<br>
+						Department of Bioenvironmental Systems Engineering, National Taiwan University<br>
+						Hydrotech Research Institute, National Taiwan University<br>
+						Taichung Irrigation Association<br>
+						Liugong Irrigation Association<br>
+						Chising Irrigation Association<br>
+						Council of Agriculture, Executive Yuan, Taiwan (COA)<br>
+						Water Resources Agency, Ministry of Economic Affairs, Taiwan (WRA)<br>
+
+						<br>
+
+						<ul>
+							<li><img src="images/PAWEES-logo.png" alt=""></li>
+							<li><img src="images/footer/OG_logo02.jpg" alt=""></li>
+							<li><img src="images/footer/OG_logo03.jpg" alt=""></li>
+							<li><img src="images/footer/OG_logo09.jpg" alt=""></li>
+							<li><img src="images/footer/OG_logo04.png" alt=""></li>
+							<li><img src="images/footer/OG_logo05.jpg" alt=""></li>
+							<li><img src="images/footer/OG_logo06.jpg" alt=""></li>
+							<li><img src="images/footer/OG_logo07.jpg" alt=""></li>
+							<li><img src="images/footer/OG_logo08.png" alt=""></li>
+						</ul>
+
+					</div>
+
+					<div class="contact_us">
+						<h1>Contact</h1>
+
+						<ul class="share-buttons">
+							<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpawees.tk%2F&t=PAWEES%202017%20International%20Conference" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="images/flat_web_icon_set/inverted/Facebook.png"></a></li>
+							<li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fpawees.tk%2F&text=PAWEES%202017%20International%20Conference:%20https%3A%2F%2Fpawees.tk%2F" target="_blank" title="Tweet"><img alt="Tweet" src="images/flat_web_icon_set/inverted/Twitter.png"></a></li>
+							<li><a href="https://plus.google.com/share?url=https%3A%2F%2Fpawees.tk%2F" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="images/flat_web_icon_set/inverted/Google+.png"></a></li>
+							<li><a href="http://www.tumblr.com/share?v=3&u=https%3A%2F%2Fpawees.tk%2F&t=PAWEES%202017%20International%20Conference&s=" target="_blank" title="Post to Tumblr"><img alt="Post to Tumblr" src="images/flat_web_icon_set/inverted/Tumblr.png"></a></li>
+							<li><a href="mailto:?subject=PAWEES%202017%20International%20Conference&body=:%20https%3A%2F%2Fpawees.tk%2F" target="_blank" title="Send email"><img alt="Send email" src="images/flat_web_icon_set/inverted/Email.png"></a></li>
+						</ul>
+
+						Prof. Ke-Sheng Cheng<br>
+						pawees2017@gmail.com<br>
+						Dept. of Bioenvironmental Systems Eng.<br>
+						National Taiwan University, Taiwan<br>
+						<br>
+						<span>2017 &copy; MYstudio</span>
+
+
+					</div>
+
+			</footer>
+
+
+	</content>
+
+</div><!-- wrap的結尾 -->
+
+
+<!-- ====================================================================================== -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100740925-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="./js/md5.min.js"></script>
+<script src="./js/apis.js"></script>
+<script src="./js/nav.js"></script>
+<script src="./js/Popup.js"></script>
+<script src="./js/form.js"></script>
+<script>
+	$(document).ready(function() {
+		console.log("ready!");
+		apis.Verification()
+	})
+</script>
+
+
+</body>
+</html>
