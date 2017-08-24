@@ -2,7 +2,7 @@ image: williamyeh/ansible:ubuntu16.04
 
 stages:
   # - test
-  - release
+  - deploy
 
 before_script:
   # - git config --global user.email "lu.yingray@gmail.com"
@@ -30,8 +30,15 @@ before_script:
 #     - branches
 
 
-minor_release:
-  script:
+# minor_release:
+#   script:
+#     - bash ./scripts/minor_release.bash
+#   stage: release
+#   when: manual
+#   only:
+#     - master@yingray/pawees-system
+
+deploy:
     - ansible-playbook -i ./ansible/hosts -u yingray.lu ./ansible/deployment.yml
   stage: deploy
   when: manual
