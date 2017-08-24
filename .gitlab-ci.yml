@@ -1,0 +1,30 @@
+image: yingray/node-phantom:latest
+
+stages:
+  # - test
+  - release
+
+before_script:
+  - bash ./scripts/ssh_setting.bash
+
+# unit test
+# test:
+#   script:
+#     - cd node
+#     - yarn
+#     - npm test
+#   stage: test
+#   only:
+#     - branches
+
+
+minor_release:
+  script:
+    - bash ./scripts/minor_release.bash
+  stage: release
+  when: manual
+  only:
+    - master@yingray/pawees-system
+
+deploy:
+
