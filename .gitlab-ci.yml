@@ -1,11 +1,23 @@
-image: yingray/node-phantom:latest
+image: williamyeh/ansible:ubuntu16.04
 
 stages:
   # - test
   - release
 
 before_script:
-  - bash ./scripts/ssh_setting.bash
+  # - git config --global user.email "lu.yingray@gmail.com"
+  # - git config --global user.name "Yingray Lu"
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+  - cd ansible
+  - mkdir group_vars
+  - echo "$ANSIBLE_HOSTS" > hosts
+  - echo "$ANSIBLE_VARS" > group_vars/all
+  - cd -
 
 # unit test
 # test:
@@ -20,11 +32,8 @@ before_script:
 
 minor_release:
   script:
-    - bash ./scripts/minor_release.bash
-  stage: release
+    - ansible-playbook -i ./ansible/hosts -u yingray.lu ./ansible/deployment.yml
+  stage: deploy
   when: manual
   only:
     - master@yingray/pawees-system
-
-deploy:
-

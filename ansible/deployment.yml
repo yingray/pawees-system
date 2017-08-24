@@ -1,0 +1,20 @@
+- name: Deploy
+  hosts: prod
+  # connection: local
+  tasks:
+    - name: Update repo
+      git:
+        repo: "{{ repo }}"
+        accept_hostkey: yes
+        dest: "{{ dir_path }}"
+        version: "{{ deploy_branch }}"
+
+    - name: Rebuild docker images
+      command: docker-compose build
+      args:
+        chdir: "{{ dir_path }}"
+
+    - name: Restart docker images
+      command: docker-compose start
+      args:
+        chdir: "{{ dir_path }}"
