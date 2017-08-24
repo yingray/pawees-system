@@ -39,6 +39,7 @@ before_script:
 #     - master@yingray/pawees-system
 
 deploy:
+  script:
     - ansible-playbook -i ./ansible/hosts -u yingray.lu ./ansible/deployment.yml
   stage: deploy
   when: manual
