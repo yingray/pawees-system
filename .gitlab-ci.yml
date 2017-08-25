@@ -1,12 +1,13 @@
-image: williamyeh/ansible:ubuntu16.04
+image: yingray/node-phantom:latest
 
 stages:
   # - test
+  - release
   - deploy
 
 before_script:
-  # - git config --global user.email "lu.yingray@gmail.com"
-  # - git config --global user.name "Yingray Lu"
+  - git config --global user.email "lu.yingray@gmail.com"
+  - git config --global user.name "Yingray Lu"
   - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
   - eval $(ssh-agent -s)
   - ssh-add <(echo "$SSH_PRIVATE_KEY")
@@ -30,15 +31,26 @@ before_script:
 #     - branches
 
 
-# minor_release:
-#   script:
-#     - bash ./scripts/minor_release.bash
-#   stage: release
-#   when: manual
-#   only:
-#     - master@yingray/pawees-system
+minor_release:
+  script:
+    - git remote set-url --push origin $(echo $CI_REPOSITORY_URL | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#')
+    - cd node
+    - npm version minor
+    - NEXT_VER=$(node -p "require('./package.json').version")
+    - cd ../public
+    - npm version minor
+    - cd ..
+    - git commit -am "Release $NEXT_VER"
+    - git push origin HEAD:master
+    - git tag -a $NEXT_VER -m "Release $NEXT_VER"
+    - git push origin $NEXT_VER
+  stage: release
+  # when: manual
+  only:
+    - develop@yingray/pawees-system
 
 deploy:
+  image: williamyeh/ansible:ubuntu16.04
   script:
     - ansible-playbook -i ./ansible/hosts -u yingray.lu ./ansible/deployment.yml
   stage: deploy
