@@ -32,6 +32,7 @@ test:
 minor_release:
   script:
     - git remote set-url --push origin $(echo $CI_REPOSITORY_URL | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#')
+    - git merge master
     - cd node
     - npm version minor
     - NEXT_VER=$(node -p "require('./package.json').version")
