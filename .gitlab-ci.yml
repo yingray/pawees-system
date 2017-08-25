@@ -1,7 +1,7 @@
 image: yingray/node-phantom:latest
 
 stages:
-  - test
+  # - test
   - release
   - deploy
 
@@ -20,14 +20,14 @@ before_script:
   - echo "$ANSIBLE_VARS" > group_vars/all
   - cd -
 
-test:
-  script:
-    - cd node
-    - npm install
-    - npm test
-  stage: test
-  only:
-    - branches
+# test:
+#   script:
+#     - cd node
+#     - npm install
+#     - npm test
+#   stage: test
+#   only:
+#     - branches
 
 minor_release:
   script:
@@ -54,4 +54,4 @@ deploy:
     - ansible-playbook -i ./ansible/hosts -u yingray.lu ./ansible/deployment.yml
   stage: deploy
   only:
-    - master@yingray/pawees-system
+    - tags
