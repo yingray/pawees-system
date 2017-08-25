@@ -23,7 +23,7 @@ before_script:
 test:
   script:
     - cd node
-    - yarn
+    - npm install
     - npm test
   stage: test
   only:
