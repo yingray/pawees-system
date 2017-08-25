@@ -49,7 +49,7 @@ minor_release:
     - develop@yingray/pawees-system
 
 deploy:
-  image: williamyeh/ansible:ubuntu16.04
+  image: ansible/ansible:ubuntu1604
   script:
     - ansible-playbook -i ./ansible/hosts -u yingray.lu ./ansible/deployment.yml
   stage: deploy
