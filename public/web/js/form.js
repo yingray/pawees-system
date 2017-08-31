@@ -84,10 +84,10 @@ function appendInputField(element, value) {
 		inputField = '<input type="text" name="' + name + '"value="' + value + '" style="width: 400px;" onchange="updateAuthorsAff()">';
 	} else if (name === 'authors') {
 		inputField = '<input type="text" name="authors" value="' + vn + '">\
-		<select name="authors" value="' + value.affiliation + '" style="width:200px;" required>\
+		<select name="authors" temp="' + value.affiliation + '" style="width:200px;" required>\
 		<option value="" selected disabled>Please select</option>\
 			</select>\
-		';
+    ';
 	}
 	var buttonMinor = '<input type="button" value="-" onclick="deltxt(' + nameId + ');updateAuthorsAff();">'
 	$(element).before('<li id="' + nameId + '">' + inputField + buttonMinor + '</li>')
@@ -104,7 +104,10 @@ function updateAuthorsAff() {
 	}
 	$.each(aff_field, (k, v) => {
 		if(v.value) select.append('<option>'+v.value+'</option>');
-	});
+  });
+  select.map((i, s) => {
+    s.value = s.getAttribute('temp')
+  })
 }
 
 $('input[data-type="array"]').click(function() {
@@ -137,7 +140,7 @@ function autofillAllForm(obj) {
 					if ($(b).attr('data-type')) {
 						if(b.name === 'authors') {
 							obj[0].paper['authors'].map(obj => {
-								appendInputField(b, obj);
+                appendInputField(b, obj);
 							})
 						} else {
 							obj[0].paper[b.name].map(string => {
