@@ -1,4 +1,4 @@
-const requestBodyToModelBody = (requestBody, editTime) => {
+const requestBodyToModelBody = (requestBody, filename) => {
 	const response = {
 		"updated_at": new Date(),
 		"delegate": {
@@ -52,8 +52,8 @@ const requestBodyToModelBody = (requestBody, editTime) => {
 			"authors": requestBody.paper.authors,
 			"affiliations": requestBody.paper.affiliations,
 			"abstract": requestBody.paper.abstract,
-			"keywords": requestBody.paper.keywords,
-            "link": editTime ? `/papers/${firstAuthor(requestBody.paper.authors)} - ${requestBody.paper.title} ${editTime}.pdf` : ''
+      "keywords": requestBody.paper.keywords,
+      "link": filename ? `/papers/${filename}.pdf` : ''
 		}
 	}
 

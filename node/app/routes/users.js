@@ -93,12 +93,15 @@ module.exports = function (router) {
                  * No => Step 3.
                  */
                 if (requestBody.paper.title && requestBody.paper.authors && requestBody.paper.affiliations && requestBody.paper.abstract && requestBody.paper.keywords ) {
-					const editTime = Date.now();
-                    const filename = `${firstAuthor(requestBody.paper.authors)} - ${requestBody.paper.title} ${editTime}`
+                    const getFilename = (a, b) => {
+                      const str = `${a} - ${b}`
+                      return str.replace(/[^A-Za-z0-9\-\ ]/g, '')
+                    }
+                    const filename = getFilename(firstAuthor(requestBody.paper.authors), requestBody.paper.title)
                     ConvertPdf(filename, requestBody.paper)
                         .then(response => {
                             console.log('========== CONVERT SUCCESSFULLY ==========', response)
-                            updateProfile(editTime)
+                            updateProfile(filename)
                                 .then(updateResponse => res.json(updateResponse))
                                 .catch(err => res.status(401).send(err))
                         })
