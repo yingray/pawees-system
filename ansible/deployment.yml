@@ -14,7 +14,12 @@
       args:
         chdir: "{{ dir_path }}"
 
+    - name: Stop docker containers
+      command: docker-compose stop
+      args:
+        chdir: "{{ dir_path }}"
+
     - name: Restart docker images
-      command: docker-compose start
+      command: docker-compose up -d
       args:
         chdir: "{{ dir_path }}"
