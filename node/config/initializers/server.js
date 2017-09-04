@@ -21,7 +21,7 @@ module.exports = cb => {
   const host = process.env.ENV === 'dev' ? 'mongodb://localhost:27017' : 'mongodb://mongo'
 
   // app.use(morgan('common'))
-  app.use(morgan('dev'))
+  app.use(morgan('common'))
 
   app.use(bodyParser.urlencoded({ extended: true }))
   app.use(bodyParser.json({ type: '*/*' }))
