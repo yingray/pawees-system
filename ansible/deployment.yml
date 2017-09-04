@@ -6,6 +6,7 @@
       git:
         repo: "{{ repo }}"
         accept_hostkey: yes
+        force: yes
         dest: "{{ dir_path }}"
         version: "{{ deploy_branch }}"
 
