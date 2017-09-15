@@ -421,8 +421,8 @@ section video{
 	width: 50%;
 
 	text-align: justify;
-	text-align-last: right;
-	-moz-text-align-last: right;
+	text-align-last: left;
+	-moz-text-align-last: left;
 }
 	.section07 .fee table tr td~td{
 		text-align-last: left;
